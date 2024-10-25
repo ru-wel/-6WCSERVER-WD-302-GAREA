@@ -62,6 +62,34 @@
     <!-- <div class="container mt-5"> -->
     <router-view></router-view>
     <!-- </div> -->
+
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+    <div class="mt-5">
+
+      <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+          <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon icon="fa-brands fa-facebook" /></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon icon="fa-brands fa-x-twitter" /></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon icon="fa-brands fa-google" /></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon icon="fa-brands fa-linkedin-in" /></a>
+
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon icon="fa-brands fa-github" /></a>
+          </section>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2024 Copyright:
+          <a class="text-white" href="" style="text-decoration: none;">GAREA</a>
+        </div>
+      </footer>
+    </div>
+
   </div>
 </template>
 

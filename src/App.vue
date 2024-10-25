@@ -13,7 +13,7 @@
 
         <ul class="nav navbar-nav flex-row float-right order-lg-3 text-dark">
           <li class="nav-item">
-            <router-link class="nav-link fs-5 fw-medium" to="/createProperties">Create Properties</router-link>
+            <router-link class="nav-link fs-5 fw-medium" to="/addProperties">Add Properties</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link fs-5 fw-medium" to="/viewProperties">View Properties</router-link>

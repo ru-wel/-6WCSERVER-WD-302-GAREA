@@ -18,7 +18,7 @@ const routes = [
   {
     path: '/createProperties',
     name: 'createProperties',
-    component: () => import('../components/CreateProperties.vue')
+    component: () => import('../components/AddProperties.vue')
   },
   {
     path: '/viewProperties',

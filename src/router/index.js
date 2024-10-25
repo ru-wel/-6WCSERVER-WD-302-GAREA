@@ -16,8 +16,8 @@ const routes = [
     component: () => import('../components/Properties.vue')
   },
   {
-    path: '/createProperties',
-    name: 'createProperties',
+    path: '/addProperties',
+    name: 'addProperties',
     component: () => import('../components/AddProperties.vue')
   },
   {

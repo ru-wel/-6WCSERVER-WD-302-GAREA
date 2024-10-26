@@ -1,85 +1,58 @@
 <template>
   <div id="app">
-    <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-lg navbar-light-lg bg-light p-2">
-      <div class="container">
-        <router-link class="navbar-brand float-left fs-2 text-dark p-3 order-lg-1 fw-semibold"
-          to="/">GAREA</router-link>
-        <ul class="nav navbar-nav flex-row float-right order-lg-2 text-dark">
-          <li class="nav-item">
-            <router-link class="nav-link pr-3 fs-5 fw-medium" to="/properties">Places to Stay</router-link>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container-fluid container">
+        <router-link class="navbar-brand fs-2 text-dark p-3 fw-semibold" to="/">GAREA</router-link>
 
-        <ul class="nav navbar-nav flex-row float-right order-lg-3 text-dark">
-          <li class="nav-item">
-            <router-link class="nav-link fs-5 fw-medium" to="/addProperties">Add Properties</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link fs-5 fw-medium" to="/viewProperties">View Properties</router-link>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
-      <div class="container">
-        <div class="order-lg-3">
-          <router-link class="navbar-brand float-left fs-2 text-dark p-3 fw-semibold"
-          to="/">GAREA</router-link>
-        </div>
-
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <button class="navbar-toggler no-shadow border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navMenu">
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mx-auto mb-lg-0">
+            <li class="nav-item">
+              <router-link class="nav-link pr-3 fs-5 fw-medium" to="/properties">Places to Stay</router-link>
+            </li>
+          </ul>
 
-          <div class="order-lg-2">
-            <ul class="nav navbar-nav flex-row float-right text-dark">
-              <li class="nav-item">
-                <router-link class="nav-link fs-5 fw-medium" to="/createProperties">Create Properties</router-link>
-              </li>
-              <li class="nav-item">
-                <router-link class="nav-link fs-5 fw-medium" to="/viewProperties">View Properties</router-link>
-              </li>
-            </ul>
-          </div>
-
-          <div class="order-lg-1">
-            <ul class="nav navbar-nav flex-row float-right order-lg-2 text-dark">
-              <li class="nav-item">
-                <router-link class="nav-link pr-3 fs-5 fw-medium" to="/properties">Places to Stay</router-link>
-              </li>
-            </ul>
-          </div>
-          
+          <ul class="nav navbar-nav text-dark">
+            <li class="nav-item">
+              <router-link class="nav-link fs-5 fw-medium" to="/addProperties">Add Properties</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link fs-5 fw-medium" to="/viewProperties">View Properties</router-link>
+            </li>
+          </ul>
         </div>
       </div>
-    </nav> -->
+    </nav>
 
     <!-- Router View -->
-    <!-- <div class="container mt-5"> -->
     <router-view></router-view>
-    <!-- </div> -->
 
-    <!-- Remove the container if you want to extend the Footer to full width. -->
     <div class="mt-5">
 
       <footer class="bg-dark text-center text-white">
         <div class="container p-4 pb-0">
           <section class="mb-4">
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon icon="fa-brands fa-facebook" /></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon
+                icon="fa-brands fa-facebook" /></a>
 
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon icon="fa-brands fa-x-twitter" /></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon
+                icon="fa-brands fa-x-twitter" /></a>
 
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon icon="fa-brands fa-google" /></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon
+                icon="fa-brands fa-google" /></a>
 
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon
+                icon="fa-brands fa-instagram" /></a>
 
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon icon="fa-brands fa-linkedin-in" /></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon
+                icon="fa-brands fa-linkedin-in" /></a>
 
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon icon="fa-brands fa-github" /></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><font-awesome-icon
+                icon="fa-brands fa-github" /></a>
           </section>
         </div>
 

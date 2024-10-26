@@ -1,5 +1,5 @@
 <template>
-    <div class="row justify-content-center">
+    <div class="row justify-content-center mt-5 pt-5">
         <div class="col-md-6">
             <h3 class="text-center">Add a Property</h3>
             <form @submit.prevent="handleSubmitForm">
@@ -19,17 +19,6 @@
                     <label>Price</label>
                     <input type="text" class="form-control" v-model="property.price" required>
                 </div>
-
-                <!-- <div class="form-group" v-for="n in 5" :key="n">
-                    <label :for="'image' + n" class="col-lg-3 col-form-label">Image {{ n }}</label>
-                    <input 
-                        class="form-control" 
-                        :id="'file' + n" 
-                        type="file" 
-                        required 
-                        @change="onFileChange($event, n)"
-                    >
-                </div> -->
 
                 <div class="form-group">
                     <button class="btn btn-danger btn-block">Create</button>

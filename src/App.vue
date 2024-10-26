@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top pb-3">
       <div class="container-fluid container">
         <router-link class="navbar-brand fs-2 text-dark p-3 fw-semibold" to="/">GAREA</router-link>
 

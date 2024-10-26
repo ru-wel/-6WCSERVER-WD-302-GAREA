@@ -126,17 +126,69 @@
         </div>
       </div>
     </div>
+
+    <div class="container my-5">
+      <h1 class="text-center text-uppercase text-dark fw-semibold mb-4">Admin Picks</h1>
+
+      <div class="row-g-0">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-3 px-5 d-flex justify-content-center">
+
+          <div class="col pt-2" v-for="property in Properties" :key="property._id">
+            <div class="card rounded-5 h-100">
+              <img class="card-img-top w-100 pt-3 pb-2 px-3 rounded-5" src="../assets/places-to-stay/FF-1.jpg" />
+              <div class="card-body text-center">
+                <h5 class="card-title item-name">{{ property.title }}</h5>
+                <p class="item-location text-secondary">{{ property.location }}</p>
+                <p class="card-text">Php {{ property.price }}</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col pt-2">
+            <div class="card rounded-5 h-100">
+              <img class="card-img-top w-100 pt-3 pb-2 px-3 rounded-5" src="../assets/places-to-stay/FF-2.jpg" />
+              <div class="card-body text-center">
+                <h5 class="card-title item-name">Serenity Sanctuary</h5>
+                <p class="item-location text-secondary">Los Angeles, California</p>
+                <p class="card-text">Php 30,000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col pt-2">
+            <div class="card rounded-5 h-100">
+              <img class="card-img-top w-100 pt-3 pb-2 px-3 rounded-5" src="../assets/places-to-stay/FF-4.jpg" />
+              <div class="card-body text-center">
+                <h5 class="card-title item-name">Celestial Solitude</h5>
+                <p class="item-location text-secondary">Manila, Philippines</p>
+                <p class="card-text">Php 20,000</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
   </div>
 </template>
   
-  <script>
+<script>
+  import axios from 'axios';
   export default {
-    name: 'GAREA',
-    props: {
-      msg: String
-    }
-    }
-    </script>
+      data(){
+          return{
+              Properties: []
+          }
+      },
+      created(){
+          let apiUrl = 'http://localhost:4000/api/view-property';
+          axios.get(apiUrl).then(res => {
+              this.Properties = res.data;
+          }).catch(error => {
+              console.log(error);
+          })
+      }
+  }
+</script>
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped>

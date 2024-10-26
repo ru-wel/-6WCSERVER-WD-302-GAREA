@@ -1,6 +1,6 @@
 <template>
-  <div class="row justify-content-center">
-      <div class="col-md-6">
+  <div class="row justify-content-center mt-5 pt-5">
+      <div class="col-md-6 mt-2 pt-2">
           <h3 class="text-center">Update Property</h3>
           <form @submit.prevent="handleUpdateForm">
               <div class="form-group">

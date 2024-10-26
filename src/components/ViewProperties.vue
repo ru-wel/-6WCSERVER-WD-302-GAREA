@@ -1,6 +1,6 @@
 <template>
-  <div class="row">
-    <div class="col-md-12">
+  <div class="row mt-5 pt-5">
+    <div class="col-md-12 mt-2 pt-2">
         <table class="table table-striped">
             <thead class="thead-dark">
                 <tr>

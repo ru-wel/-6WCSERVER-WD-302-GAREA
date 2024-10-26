@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="mt-5 pt-5">
         <div class="row mb-5">
             <div class="col-sm-12">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -14,30 +14,32 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="../assets/carousel/home-slide-1.jpg" class="d-block w-100 c-img" alt="...">
-                            <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                                <div class="animated bounceInRight" style="animation-delay: 1s;">
-                                    <p class="mt-5 pt-5 fs-2 text-light">Explore, Discover, Travel</p>
-                                    <h1 class="fw-semibold text-uppercase">Travel Around <br> the World</h1>
-                                    <button type="button" class="btn btn-dark mt-3 fs-6 px-4 py-2">Discover
-                                        More</button>
-                                </div>
+                            <div class="carousel-caption top-0 mt-4 d-md-block">
+                                <p class="mt-5 pt-5 fs-2 text-light">Explore, Discover, Travel</p>
+                                <h1 class="fw-semibold text-uppercase display-1">Travel Around <br> the World</h1>
+                                <!-- <button type="button" class="btn btn-dark mt-3 fs-6 px-4 py-2 text-uppercase">Discover
+                                    More</button> -->
+                                    <router-link class="btn btn-dark mt-3 fs-6 px-4 py-2 text-light text-uppercase" to="/properties">Discover More</router-link>
                             </div>
                         </div>
 
                         <div class="carousel-item">
                             <img src="../assets/carousel/home-slide-2.jpg" class="d-block w-100 c-img" alt="...">
-                            <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                            <div class="carousel-caption top-0 mt-4 d-md-block">
                                 <p class="mt-5 pt-5 fs-2 text-light">Explore, Discover, Travel</p>
-                                <h1 class="fw-semibold text-uppercase">Discover The<br> New Places</h1>
-                                <button type="button" class="btn btn-dark mt-3 fs-6 px-4 py-2">Discover More</button>
+                                <h1 class="fw-semibold text-uppercase display-1">Discover The<br> New Places</h1>
+                                <!-- <button type="button" class="btn btn-dark mt-3 fs-6 px-4 py-2 text-uppercase">Discover More</button> -->
+                                <router-link class="btn btn-dark mt-3 fs-6 px-4 py-2 text-light text-uppercase" to="/properties">Discover More</router-link>
                             </div>
                         </div>
+
                         <div class="carousel-item">
                             <img src="../assets/carousel/home-slide-3.jpg" class="d-block w-100 c-img" alt="...">
-                            <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                            <div class="carousel-caption top-0 mt-4 d-md-block">
                                 <p class="mt-5 pt-5 fs-2 text-light">Explore, Discover, Travel</p>
-                                <h1 class="fw-semibold text-uppercase">Make Your Tour Worthwhile</h1>
-                                <button type="button" class="btn btn-dark mt-3 fs-6 px-4 py-2">Discover More</button>
+                                <h1 class="fw-semibold text-uppercase display-1">Make Your Tour Worthwhile</h1>
+                                <!-- <button type="button" class="btn btn-dark mt-3 fs-6 px-4 py-2 text-uppercase">Discover More</button> -->
+                                <router-link class="btn btn-dark mt-3 fs-6 px-4 py-2 text-light text-uppercase" to="/properties">Discover More</router-link>
                             </div>
                         </div>
                     </div>
@@ -115,7 +117,7 @@
                             <div class="card-body text-center">
                                 <h5 class="card-title item-name">Vista Villa</h5>
                                 <p class="item-location text-secondary">Toronto, Canada</p>
-                                <p class="card-text">Php 25,000</p>
+                                <p class="card-text">Php 18,000</p>
                             </div>
                         </div>
                     </div>
@@ -237,13 +239,13 @@
         <div class="container py-3">
             <div class="row ms-auto">
                 <div class="col-lg-6 col-md-12 col-12">
-                    <img src="../assets/why-choose-garea.jpg" class="img-fluid w-100 rounded pt-4" alt="">
+                    <img src="../assets/why-choose-garea.jpg" class="img-fluid w-100 rounded my-sm-4" id="wiggle" alt="">
                 </div>
 
                 <div class="col-lg-6 col-md-12 col-12 px-lg-5 pe-sm-5">
-                    <div class="py-2 px-2 wcg">
-                        <h1 class="fw-semibold text-uppercase text-start text-dark pt-sm-4">Why Choose GAREA?</h1>
-                        <p class="py-3 wcg-text">At GAREA, we believe that finding the perfect place to stay is about more than just booking a property—it's about creating unforgettable experiences.  Our commitment to quality assurance means you can trust that each accommodation meets the highest standards. Our service can allow you to immerse yourself fully in the experience. We strive to create a seamless experience from booking to check-out, ensuring your journey is hassle-free and enjoyable. 
+                    <div class="py-2 px-2 wcg mt-sm-4">
+                        <h1 class="fw-semibold text-uppercase text-start text-dark mt-3">Why Choose GAREA?</h1>
+                        <p class="py-3 text-secondary">At GAREA, we believe that finding the perfect place to stay is about more than just booking a property—it's about creating unforgettable experiences.  Our commitment to quality assurance means you can trust that each accommodation meets the highest standards. Our service can allow you to immerse yourself fully in the experience. We strive to create a seamless experience from booking to check-out, ensuring your journey is hassle-free and enjoyable. 
                         </p>
 
                         <p class="fw-medium fs-5">Choose GAREA for a memorable getaway that truly connects you to the heart of the place you’re visiting!</p>
@@ -281,7 +283,7 @@ li {
 }
 
 a {
-    color: #42b983;
+    color: #000000;
 }
 
 .carousel .carousel-indicators button {
@@ -296,9 +298,9 @@ a {
     height: 600px;
 }
 
-.carousel-item h1 {
+/* .carousel-item h1 {
     font-size: 5rem;
-}
+} */
 
 .c-img {
     height: 100%;
@@ -319,6 +321,14 @@ a {
 
 .offer-text {
     font-size: 15px;
+}
+
+.card {
+    background: linear-gradient(#f2f2f0 50%, #ffffff 50%);
+    background-size: 100% 200%;
+    background-position: 0 0%;
+    border-radius: 5px;   
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
 }
 
 .card-wwo {
@@ -356,5 +366,20 @@ a {
 .wcg-text {
     font-size: 18px;
 }
+
+/* #wiggle {
+    position: relative;
+    background: white;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    color: white;
+    box-shadow: 15px 15px #979F6E;
+    transition: all .4s ease;
+  }
+
+#wiggle:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 10px 10px #3B3E37;
+    transition: all .4s ease;
+  } */
 
 </style>

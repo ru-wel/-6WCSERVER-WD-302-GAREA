@@ -58,41 +58,49 @@ export default {
 </script>
 
 <style scoped>
-html, body {
+html, .main-container {
   height: 100%; 
   margin: 0; 
   padding: 0;
+  overflow: hidden; 
+  
 }
 
 .main-container {
   position: relative;
-  height: 100vh;
+  height: 100vh; 
   overflow: hidden; 
 }
 
 .background-image {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%; 
-  height: 100%; 
+  width: 100%;
+  min-height: 100vh; 
   background-image: url('../assets/bg1.jpg'); 
   background-size: cover; 
   background-position: center;
+  background-attachment: fixed;
   filter: brightness(0.7); 
-  z-index: -1;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+
 }
 
+
 .form-container {
-  position: relative; 
-  z-index: 1; 
-  max-width: 600px; 
-  margin: auto; 
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin: 0 auto;
   padding: 40px;
-  background-color: rgba(255, 255, 255, 0.9); 
-  border-radius: 8px; 
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
-  margin-top: 130px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-50%); 
+  top: 50%; 
 }
 
 .form-title {
@@ -100,10 +108,11 @@ html, body {
   margin-bottom: 20px; 
   text-align: center; 
   color: #333; 
+  margin: 0 0 20px;  
 }
 
 .form-group {
-  margin-bottom: 15px; 
+  margin-bottom: 0px; 
   display: flex;
   flex-direction: column; 
 }
@@ -120,6 +129,7 @@ input[type="text"] {
   border: 1px solid #ccc; 
   border-radius: 4px; 
   font-size: 16px; 
+  box-sizing: border-box; /* Prevents width issues due to padding */  
 }
 
 .submit-button {

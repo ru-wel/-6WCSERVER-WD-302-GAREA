@@ -41,6 +41,8 @@
         </div>
       </div>
     </div>
+
+   
   </div>
 </template>
 
@@ -87,23 +89,25 @@ html, body {
 }
 
 .background-image {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; 
-  height: 100%;
-  background-image: url('../assets/bg2.jpg'); 
-  background-size: cover; 
-  background-position: center; 
-  filter: brightness(0.7);
-  z-index: -1; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);
+    z-index: -1;
 }
 
 .main-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
+
+  position: relative;
+  height: 100vh;
+  overflow: hidden; 
 }
+
 
 .content {
     flex: 1; 
@@ -131,7 +135,6 @@ html, body {
     background-color: rgba(0, 0, 0, 0.05); 
 }
 
-
 .btn-edit {
     background-color: #707c56; 
     color: white; 
@@ -150,11 +153,12 @@ html, body {
     background-color: #79575a; 
 }
 
-
 .footer {
     background-color: #f8f9fa;
-    padding: 0; 
-    width: 100%; 
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
 }
 
 .container {

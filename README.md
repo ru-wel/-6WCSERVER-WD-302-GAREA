@@ -11,7 +11,7 @@ The GAREA web application focuses on travel and lifestyle, offering an Airbnb-st
 ```
 npm install
 ```
-(npm install on main folder an on backend folder)
+(npm install on main folder and on backend folder)
 
 ### Run Vue App
 ```

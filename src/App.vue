@@ -31,7 +31,7 @@
     <!-- Router View -->
     <router-view></router-view>
 
-    <div class="mt-5">
+    <div class="mt-0">  <!-- CHANGED HERE -->
 
       <footer class="bg-dark text-center text-white">
         <div class="container p-4 pb-0">
